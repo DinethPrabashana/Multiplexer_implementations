@@ -16,15 +16,14 @@ Multiplexers operate using select lines, which determine which input to route to
 )
 
 ### Truth Table Example for 4-to-1 MUX
-| Select Lines | Output |
-|--------------|--------|
+```
 | S1 | S0 | Y    |
 |----|----|------|
-| 0  | 0  | D0   |
-| 0  | 1  | D1   |
-| 1  | 0  | D2   |
-| 1  | 1  | D3   |
-
+| 0  | 0  | A0   |
+| 0  | 1  | A1   |
+| 1  | 0  | A2   |
+| 1  | 1  | A3   |
+```
 ### Verilog Code Example for 4-to-1 MUX
 ```verilog
 module MUX4to1 (
@@ -32,8 +31,8 @@ module MUX4to1 (
     input wire S0, S1,
     output wire Y
 );
-    assign Y = (S1 == 0 && S0 == 0) ? D0 :
-               (S1 == 0 && S0 == 1) ? D1 :
-               (S1 == 1 && S0 == 0) ? D2 :
-               (S1 == 1 && S0 == 1) ? D3 : 1'bx;
+    assign Y = (S1 == 0 && S0 == 0) ? A0 :
+               (S1 == 0 && S0 == 1) ? A1 :
+               (S1 == 1 && S0 == 0) ? A2 :
+               (S1 == 1 && S0 == 1) ? A3 : 1'bx;
 endmodule
