@@ -25,14 +25,13 @@ In a 4-to-1 MUX, there are 4 input lines, 2 selection lines, and 1 output line.
 - **Select Lines**: `S0`, `S1`
 - **Output**: `Y`
 
-The output `Y` can be represented as:
-\[ Y = I0 \cdot \overline{S1} \cdot \overline{S0} + I1 \cdot \overline{S1} \cdot S0 + I2 \cdot S1 \cdot \overline{S0} + I3 \cdot S1 \cdot S0 \]
 
 ### Multiplexer Diagram
 
 Below is a diagram illustrating the structure of a 4-to-1 multiplexer:
 
-![4-to-1 Multiplexer](https://example.com/path/to/multiplexer-diagram.png)
+![4_1_multiplexer](https://github.com/DinethPrabashana/Multiplexer_implementations/assets/143341376/07ba1150-f312-4737-9d9e-5b5c2f3e8492)
+mple.com/path/to/multiplexer-diagram.png)
 
 ## How a Multiplexer Works
 
