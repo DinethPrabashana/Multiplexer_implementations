@@ -1,14 +1,9 @@
-## Introduction to Verilog
+# Multiplexer Implementation
 
-Verilog is a hardware description language (HDL) used for designing and simulating digital circuits. It enables efficient hardware design by describing electronic systems, from simple logic gates to complex integrated circuits.
+This repository provides three main methods for implementing a Multiplexer:
 
-### Key Features:
-- **Modularity**: Allows for the modular design of circuits, enhancing reusability.
-- **Simulation**: Facilitates simulation and verification of digital designs.
-- **Synthesis**: Supports synthesis into hardware implementations, such as ASICs and FPGAs.
+1. [Behavioral](./Behavioral)
+2. [Gate Level](./GateLevel)
+3. [Dataflow Level](./Dataflow)
 
-### Example:
-```verilog
-module AndGate(input a, b, output y);
-    assign y = a & b;
-endmodule
+Each directory contains the Verilog code and testbenches for its respective implementation.
