@@ -11,8 +11,9 @@ MUX_4to1 mux_inst(.out(out), .in0(in0), .in1(in1), .in2(in2), .in3(in3), .s0(s0)
 
 // Stimulus
 initial begin
-    $monitor("Time=%0t, in0=%b, in1=%b, in2=%b, in3=%b, s0=%b, s1=%b, out=%b", $time, in0, in1, in2, in3, s0, s1, out);
-    
+    $dumpfile("tb_mux_4to1.vcd");
+    $dumpvars(0, tb_mux_4to1);
+
     // Test case 1: s0=0, s1=0
     in0 = 1; in1 = 0; in2 = 0; in3 = 0;
     s0 = 0; s1 = 0;
