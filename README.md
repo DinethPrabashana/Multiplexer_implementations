@@ -31,7 +31,7 @@ In a 4-to-1 MUX, there are 4 input lines, 2 selection lines, and 1 output line.
 Below is a diagram illustrating the structure of a 4-to-1 multiplexer:
 
 ![4_1_multiplexer](https://github.com/DinethPrabashana/Multiplexer_implementations/assets/143341376/07ba1150-f312-4737-9d9e-5b5c2f3e8492)
-mple.com/path/to/multiplexer-diagram.png)
+
 
 ## How a Multiplexer Works
 
